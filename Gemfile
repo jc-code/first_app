@@ -6,9 +6,6 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '1.3.8'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.1'
 
@@ -29,6 +26,11 @@ gem 'turbolinks', '1.1.1'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '1.0.2'
+
+group :development do 
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3', '1.3.8'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
